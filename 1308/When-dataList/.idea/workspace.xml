@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0f75766-be42-45b4-8cc2-ee07dc5fa1db" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../img/hp.avif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../index.html" beforeDir="false" />
+    <list default="true" id="d5926a85-8435-41bf-b93d-3f854fe79612" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../img/hp.avif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,24 +15,29 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
+  "associatedIndex": 4
 }]]></component>
-  <component name="ProjectId" id="3HrXuTQ4JUkHivmihDhDwHDaKRz" />
+  <component name="ProjectId" id="3HrY2pgcruAKCNy6L6qhjzbQtQb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Kotlin.MainKt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/W608-PCXX/Downloads/ClassDAM/1308/When-dataList/untitled/src/Main.kt",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -44,12 +52,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b0f75766-be42-45b4-8cc2-ee07dc5fa1db" name="Changes" comment="" />
-      <created>1786627384813</created>
+      <changelist id="d5926a85-8435-41bf-b93d-3f854fe79612" name="Changes" comment="" />
+      <created>1786627452267</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1786627384813</updated>
-      <workItem from="1786627386173" duration="66000" />
+      <updated>1786627452267</updated>
+      <workItem from="1786627453472" duration="1000000" />
     </task>
     <servers />
   </component>
