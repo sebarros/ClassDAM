@@ -2,7 +2,9 @@
 // ?: puede tener valor o puede ser nulo
 data class Estudiante(
     val nombre: String,
-    val alias: String?
+    val alias: String?,
+    val puntaje: Int,
+    val activo: Boolean
 )
 
 fun main(){
@@ -55,4 +57,65 @@ fun main(){
     var nickname: String? = null
     val nombreVisible = nickname ?: "Usuario sin nombre"
     println("Nombre: $nombreVisible")
+
+    // Smart Cast: Kotlin identifica el tipo sin declararlo
+    // Any: cualquiera
+
+    val dato: Any = "String"
+    // Comprobar el tipo de dato
+    if(dato is String){
+        println("Dato: $dato")
+        println("Cantidad de caracteres: ${dato.length}")
+    }
+
+    // Data Class
+    val estudiante = Estudiante(
+        nombre = "Carlos",
+        alias = null,
+        puntaje = 87,
+        activo = true
+    )
+
+    // Acceder directamente a las propiedades del objeto
+    println("Nombre: ${estudiante.nombre}")
+    println("Puntaje: ${estudiante.puntaje}")
+    println("Activo: ${estudiante.activo}")
+
+    // NullSafety + DataClass
+    // Si no existe un alias muestra otro mensaje
+    val aliasVisible = estudiante.alias ?: "Sin Alias"
+    println("Alias: ${aliasVisible}")
+
+    // When + DataClass
+    val nivelEstudiante = when {
+        estudiante.puntaje >= 90 -> "Experto"
+        estudiante.puntaje >= 70 -> "Intermedio"
+        estudiante.puntaje >= 50 -> "Principiante"
+        else -> "Pichon"
+    }
+    println("Nivel Estudiante: $nivelEstudiante")
+
+    // Detector de perfil
+    val mensaje = when{
+        estudiante.puntaje >= 90 ->
+            "⭐ ${estudiante.nombre}: Kotlin Master"
+        estudiante.puntaje >= 70 ->
+            "🤖 ${estudiante.nombre}: Android Developer"
+        estudiante.puntaje >= 50 ->
+            "🐤 ${estudiante.nombre}: Kotlin Junior"
+        else ->
+            "🙉 ${estudiante.nombre}: Android Roockie"
+    }
+    println(mensaje)
+    println("Alias: ${estudiante.alias ?: "Alias no definido"}")
+    println("Puntaje: ${estudiante.puntaje}/100")
+    println("Nivel: $nivelEstudiante")
+
+    // If tambien puede utilizarse dentro de un string
+    println(
+        if(estudiante.activo)
+        "Estudiante activo"
+        else
+        "Estudiante inactivo"
+    )
 }
