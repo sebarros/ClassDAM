@@ -1,0 +1,17 @@
+*.iml
+.gradle/
+.kotlin/
+build/
+local.properties
+.idea/
+/contexto
+.DS_Store
+captures/
+.externalNativeBuild/
+.cxx/
+# Material del cliente (contiene datos personales y documentos internos de AquaChile): NO se publica
+contexto/
+# Firma: nunca subir claves reales
+keystore.properties
+*.jks
+*.keystore
